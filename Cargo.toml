@@ -1,0 +1,14 @@
+[package]
+name = "kira-yew-test"
+version = "0.1.0"
+authors = ["Yew App Developer <name@example.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+kira = {path = "../kira/kira", default-features = false}
+yew = "0.17.4"
+wasm-bindgen = "0.2.67"
+web-sys = {version = "0.3.48", features = ["console", "Window"]}
